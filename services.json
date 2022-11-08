@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Computer Office Application & Troubleshooting",
+        "image": "https://i.ibb.co/7NbksTh/0-GD6-Vshvc-Zzt3-B0-E4xw-VLa-Px-QJMLBRVdj-K8-AQnrc.jpg",
+        "price": "1250",
+        "duration": "3",
+        "description": "Computer Office Applications course provides a solid foundation in the basic and intermediate skills for working with computer system, Word Processor, Spread sheet, PowerPoint, Database, Email and Internet basic applications, practices Google G-suite & concept on Freelancing. This course is ready to extend the knowledge and upgrade skill into some of the more specialized and advanced capabilities of basic operations in computing."
+    },
+    {
+        "name": "Graphics Design & Multimedia",
+        "image": "https://i.ibb.co/47Mx6tQ/Graphic-Design-multimedia.png0",
+        "price": "2050",
+        "duration": "3",
+        "description" : "This course introduces students to the characteristic manner of expressions, basic designs, various constructions, and execution of graphic design, and its visual aesthetics at particular times and places throughout history. The course covers how the look of graphic design has evolved and what caused this evolution, starting with commercial art at the beginning of the industrial revolution in the 19th century and ending with the current digital era."
+    },
+    {
+        "name": "Computer Hardware & Troubleshooting",
+        "image": "https://i.ibb.co/7ST1VZN/computer-hardware-troubleshooting-1-320.webp",
+        "price": "2050",
+        "duration": "3",
+        "description": "Students learn to identify, install, and configure various computer components, as well as basic computer and configuration concepts. This course also provides students with an understanding of proper maintenance and support of various hardware components."
+    },
+    {
+        "name": "Diploma In Computer Course",
+        "image": "https://i.ibb.co/cXzMMP4/diploma-in-computer-application.jpg",
+        "price": "3050",
+        "duration": "6",
+        "description": "Diploma in Computer Application [DCA] is a 6-12 month short term program that provides an in-depth understanding of computer applications, equips students with practical and technical skills, and imparts knowledge on various computer tools and applications that are used in day-to-day life."
+    },
+    {
+        "name": "Land Survey / Aminship Course",
+        "image": "https://i.ibb.co/2dB5ZNC/Land-surveying.jpg",
+        "price": "4050",
+        "duration": "6",
+        "description": "Presents the fundamentals of land surveying, field practice, and calculations. Includes equipment and equipment use, horizontal, vertical, angular measurements; error, traversing, leveling and stadia. Also covers the history of and careers in surveying."
+    },
+    {
+        "name": "Mobile Phone Servicing Course",
+        "image": "https://i.ibb.co/4d9K8Lf/8-1.jpg",
+        "price": "5050",
+        "duration": "3",
+        "description": "Global Institute of Cellular Technology offers the most extensive course on Mobile Phone Servicing in India. We offer government certified chip level and BGA repair training course on mobile phones, tablets and other hand-held devices using the latest technology tools, equipment and software. The syllabus provided below is a detailed syllabus which consists of 6 modules covering all aspects of Mobile Phone Servicing, Smartphone Servicing and iPhone Servicing which adds confidence to the candidate after completion of the course. All this is provided at a most affordable fee structure.20"
+    }
+]
