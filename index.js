@@ -94,7 +94,7 @@ const run= async()=>{
     app.post('/addservice', async(req, res)=>{
       const review = req.body
       const result = await serviceCollection.insertOne(review)
-      console.log(result)
+      // console.log(result)
       res.send(result)
     })
 
