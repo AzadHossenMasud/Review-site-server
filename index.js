@@ -61,7 +61,7 @@ const run= async()=>{
 
     app.get('/myreviews', async(req, res)=>{
       const email = req.query.email
-      console.log(email);
+      // console.log(email);
       const query = {email: email};
       const cursor = reviweCollection.find(query);
       const result = await cursor.toArray()
@@ -74,6 +74,16 @@ const run= async()=>{
       const result = await reviweCollection.insertOne(review)
       // console.log(result)
       res.send(result)
+    })
+
+    app.delete('/review/:id', async(req, res)=>{
+      const id = req.params.id
+      // console.log(id)
+      const query={_id: ObjectId(id)}
+      const result = await reviweCollection.deleteOne(query)
+      // console.log(result);
+      res.send(result)
+
     })
 
     
