@@ -49,6 +49,16 @@ const run= async()=>{
       res.send(result)
     })
 
+    app.get('/updatereview/:id', async(req, res)=>{
+      const id = req.params.id
+      const query = { _id : ObjectId(id)}
+      const result = await reviweCollection.findOne(query)
+      console.log(result);
+      res.send(result)
+    })
+
+
+
     app.get('/reviews', async(req, res)=>{
       const courseId = req.query.courseId
       // console.log(courseId);
@@ -68,7 +78,7 @@ const run= async()=>{
       // console.log(result);
       res.send(result)
     })
-
+// Post a review
     app.post('/review', async(req, res)=>{
       const review = req.body
       const result = await reviweCollection.insertOne(review)
@@ -76,6 +86,23 @@ const run= async()=>{
       res.send(result)
     })
 
+    // Update a review
+    app.patch('/updatereview/:id', async(req, res)=>{
+      const id = req.params.id
+      const updateReview = req.body.updateText
+      const query = {_id: ObjectId(id)}
+      const updateDoc = {
+        $set:{
+          review: updateReview
+        }
+      }
+
+      const result = await reviweCollection.updateOne(query, updateDoc)
+      console.log(result)
+      res.send(result)
+    })
+
+    // Delete a review
     app.delete('/review/:id', async(req, res)=>{
       const id = req.params.id
       // console.log(id)
