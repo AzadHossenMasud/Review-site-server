@@ -85,6 +85,13 @@ const run= async()=>{
       // console.log(result)
       res.send(result)
     })
+    // add service
+    app.post('/addservice', async(req, res)=>{
+      const review = req.body
+      const result = await serviceCollection.insertOne(review)
+      console.log(result)
+      res.send(result)
+    })
 
     // Update a review
     app.patch('/updatereview/:id', async(req, res)=>{
@@ -98,7 +105,7 @@ const run= async()=>{
       }
 
       const result = await reviweCollection.updateOne(query, updateDoc)
-      console.log(result)
+      // console.log(result)
       res.send(result)
     })
 
