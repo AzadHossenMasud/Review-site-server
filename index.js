@@ -59,6 +59,16 @@ const run= async()=>{
       res.send(result)
     })
 
+    app.get('/myreviews', async(req, res)=>{
+      const email = req.query.email
+      console.log(email);
+      const query = {email: email};
+      const cursor = reviweCollection.find(query);
+      const result = await cursor.toArray()
+      // console.log(result);
+      res.send(result)
+    })
+
     app.post('/review', async(req, res)=>{
       const review = req.body
       const result = await reviweCollection.insertOne(review)
